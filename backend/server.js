@@ -24,6 +24,7 @@ const connectDB = async () => {
 connectDB();
 
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/recipes', require('./routes/recipes'));
 
 const PORT = process.env.PORT || 5000;
 
